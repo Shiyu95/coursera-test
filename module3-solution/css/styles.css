@@ -8,7 +8,10 @@ body{
 #header-nav{
 	background-color: gray;
 	border-radius: 0;
-	border: 2px solid black;
+	border: 0;
+	border-bottom: 2px solid black;
+
+	
 }
 
 .navbar-brand h1{
