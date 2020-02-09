@@ -1,6 +1,5 @@
 body{
 	font-size: 16px;
-	color: #fff;
 	background-color: white;
 	font-family: 'Oxygen', sans-serif;
 }
@@ -9,7 +8,7 @@ body{
 #header-nav{
 	background-color: gray;
 	border-radius: 0;
-	border-bottom: 1px solid black
+	border: 2px solid black;
 }
 
 .navbar-brand h1{
@@ -58,47 +57,39 @@ body{
 
 /* HOME PAGE */
 .container .jumbotron {
-  box-shadow: 0 0 50px #3F0C1F;
-  border: 2px solid #3F0C1F;
+  
+ color: black;
 }
 
-#menu-tile, #specials-tile, #map-tile {
-  height: 250px;
+#menu-tile {
+  height: 350px;
   width: 100%;
   margin-bottom: 15px;
   position: relative;
-  border: 2px solid #3F0C1F;
-  overflow: hidden;
   background-color: grey;
   color: black;
+  padding: 3px 10px 10px 10px;
 }
-#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
-  box-shadow: 0 1px 5px 1px #cccccc;
-}
+
 
 #menu-bigTile h1{
 	text-align: center;
 	color: black;
 }
 
-#menu-tile h2{
-  
+#menu-tile h3{
+  color: black;
   background-position: center;
   text-align: center;
 }
 
 
-#menu-tile span, #specials-tile span, #map-tile span {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 1.6em;
-  text-transform: uppercase;
-  background-color: #000;
-  color: #fff;
-  opacity: .8;
+.menu-item-description {
+	color: black;
+}
+
+#menu-tile {
+	color: black;
 }
 
 /* END HOME PAGE */
@@ -107,44 +98,30 @@ body{
 
 
 
-
-
-/********** Large devices only **********/
-@media (min-width: 1200px) {
-	.container .jumbotron {
-
-    
-    height: 675px;
-  }
-
-}
-
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
 
   /* Home Page */
-  .container .jumbotron {
-    
-    height: 558px;
-  }
+
+
   /* End Home Page */
 }
 
-/********** Small devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
+/********** sm devices only **********/
+@media (min-width: 768px) and (max-width: 992px){
 	/* Home Page */
-	 .container .jumbotron {
-    
-    height: 432px;
-  }
 
+
+ #menu-tile{
+  	height: 300px;
+  }
   /* End Home Page */
 
 
 }
 
-/********** Extra small devices only **********/
-@media (max-width: 767px) {
+/********** xs devices only **********/
+@media (max-width: 768px) {
   /* Header */
   .navbar-brand {
     padding-top: 10px;
@@ -153,13 +130,6 @@ body{
   .navbar-brand h1 { /* Restaurant name */
     padding-top: 10px;
     font-size: 5vw; /* 1vw = 1% of viewport width */
-  }
-  .navbar-brand p { /* Kosher cert */
-    font-size: .6em;
-    margin-top: 12px;
-  }
-  .navbar-brand p img { /* Star-K */
-    height: 20px;
   }
 
   #collapsable-nav a { /* Collapsed nav menu text */
@@ -172,18 +142,7 @@ body{
 
   /* End Header */
 
-  /* Footer */
-  .panel-footer section {
-    margin-bottom: 30px;
-    text-align: center;
-  }
-  .panel-footer section:nth-child(3) {
-    margin-bottom: 0; /* margin already exists on the whole row */
-  }
-  .panel-footer section hr {
-    width: 50%;
-  }
-  /* End Footer */
+
 
   /* Home Page */
   .container .jumbotron {
@@ -192,14 +151,12 @@ body{
   }
 
 
-  #menu-tile, #specials-tile {
+  #menu-tile {
+  	height: 320px;
     width: 360px;
     margin: 0 auto 15px;
   }
 
-  .menu-item-description{
-  	text-align: left;
-  }
 
 }
 
